@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/mainphoto">
+
+    <TextView
+        android:id="@+id/miasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Miasto: -"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/danepogodowe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brak danych pogodowych"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/wybormiasta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wybierz miasto"
+        android:fontFamily="@font/personal"
+        android:textSize="35dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/doMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cofnij"
+        android:fontFamily="@font/personal"
+        android:textSize="35dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/closeApp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/x"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+</LinearLayout>

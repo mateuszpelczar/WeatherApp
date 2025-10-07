@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/choosecolors">
+
+    <EditText
+        android:id="@+id/miastoEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:hint="Wpisz nazwę miasta"
+        android:textColorHint="@color/white"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+         />
+
+    <Button
+        android:id="@+id/zapiszMiasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zapisz miasto"
+        android:fontFamily="@font/personal"
+        android:textSize="35dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/do1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wróć do strony głównej"
+        android:fontFamily="@font/personal"
+        android:textSize="35dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white" />
+</LinearLayout>

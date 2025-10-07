@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:id="@+id/tytulPogoda"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/awesome"
+        android:text="Aplikacja Pogodowa"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Przycisk "Sprawdź historię" -->
+
+        <Button
+            android:id="@+id/sprawdzPogode"
+            android:layout_width="212dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/rooster"
+            android:text="Sprawdź pogodę"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.165" />
+
+        <Button
+            android:id="@+id/sprawdzHistorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/rooster"
+            android:text="Sprawdź historię"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sprawdzPogode" />
+
+        <!-- Ikona X (zamknięcie aplikacji) -->
+        <ImageView
+            android:id="@+id/closeApp1"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:contentDescription="Zamknij aplikację"
+            android:focusable="true"
+            android:src="@drawable/x"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
